@@ -1,0 +1,125 @@
+li > .card{
+  margin-left:-16.7em;
+}
+#cart {
+  position: absolute;
+  background-color: white;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  border-left: 2px solid black;
+  #price {
+    font-size: 1em;
+  }
+
+  .card-img,
+  .cart-img {
+    height: 100%;
+    width: 30%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .cart-head {
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      font-size: 2em;
+      margin-right: 1em;
+    }
+  }
+  h6 {
+    font-family: "Qilka Bold";
+    font-size: 1em;
+    margin: 1em 0;
+  }
+
+  .cart-body {
+    height: 65%;
+    overflow-y: scroll;
+    .cart-item {
+      padding: 0.5em;
+      width: 100%;
+      height: 25%;
+      display: flex;
+      border-bottom: 1px solid black;
+      .cart-content {
+        width: 70%;
+        padding: 0 0.2em;
+        .row {
+          width: 85%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .cpt-box {
+            display: flex;
+            width: 50%;
+            border-radius: var(--btn-radius);
+            border: 2px solid var(--primary-accent);
+            span {
+              width: 33.3%;
+              text-align: center;
+              padding: 0.4em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cart-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid black;
+    width: 100%;
+    height: 25%;
+    .row {
+      display: flex;
+      width: 100%;
+      padding: 1em 0;
+      justify-content: space-around;
+      font-size: 2em;
+      p {
+        margin: 0;
+      }
+    }
+    button {
+      width: 94%;
+      height: 40%;
+      font-size: 1.5em;
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (380px <= width <= 700px) {
+  .cart-item {
+    .cart-content {
+      padding: 0 0.5em;
+    }
+    .row {
+      flex-direction: row;
+      padding: 1em 0;
+    }
+  }
+  .cart-footer {
+    .row {
+      flex-direction: row;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+section {
+  background-color: ededed;
+  padding: 2em;
+}
+
+.row {
+  padding: 1em 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#cities {
+  overflow-x: scroll;
+  flex-direction: row;
+}
+
+.category {
+  border: 1px solid black;
+  padding: 0.5em;
+  background-color: white;
+  border-radius: 0.2em;
+  width: 10%;
+  text-align: center;
+  transition: 2s all ease;
+}
+
+.category:hover,
+.active {
+  background-color: var(--primary-accent);
+  letter-spacing: 0.2em;
+}
+
+form {
+  width: 100%;
+  input {
+    width: 100%;
+    padding: 1em;
+    border-radius: var(--btn-radius);
+  }
+}
+
+.card-product {
+  background-color: white;
+  border: 1px solid black;
+  width: 30%;
+  border-radius: var(--btn-radius);
+
+  .card-img {
+    width: 100%;
+    height: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .card-detail {
+    border: 1px solid black;
+    border-radius: 0.3em;
+    margin: 1em;
+    padding: 1em;
+    h6,
+    p {
+      margin: 0.5em;
+      font-size: 1em;
+    }
+    h6 {
+      font-family: "Qilka Bold";
+    }
+
+    .row {
+      width: 100%;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      gap: 0.3em;
+    }
+
+    .btn:hover {
+      background-color: var(--primary-accent);
+    }
+  }
+}
+
+@media screen and (380px <= width <= 700px) {
+  #cities {
+    flex-wrap: nowrap;
+  }
+  .category {
+    width: 15em;
+  }
+  .card-product {
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    .card-img {
+      height: 17em;
+    }
+    .card-detail {
+      margin: 0;
+      border: none;
+    }
+  }
+}

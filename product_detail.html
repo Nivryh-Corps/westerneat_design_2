@@ -1,0 +1,132 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Westerneat | Home</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./product_detail.css" />
+    <link rel="stylesheet" href="./aos.css" />
+  </head>
+  <body>
+    <nav>
+      <a id="head-link" href="#">Westerneat</a>
+
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./vendors.html">Vendors</a></li>
+        <li><a href="./cart.html">Cart</a></li>
+      </ul>
+
+      <ul class="w-20">
+        <li><a href="./login.html">Login</a></li>
+        <li class="w-100">
+          <a href="./register.html" class="btn bg-primary">Register</a>
+        </li>
+      </ul>
+      <ul id="hamburger">
+        <li id="show">
+          <a href="#" tabindex="0"><img id="menu" src="./menu.svg" alt="" /></a>
+          <div class="card">
+            <ul>
+              <li class="li">
+                <a href="./index.html">Accueil</a>
+              </li>
+              <li class="li">
+                <a href="./products.html">Produits</a>
+              </li>
+              <li class="li">
+                <a href="./vendors.html">Vendeurs</a>
+              </li>
+              <li class="li">
+                <a href="./cart.html">Panier</a>
+              </li>
+              <li><a href="./login.html">Login</a></li>
+              <li>
+                <a href="./register.html" class="btn bg-primary">Register</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="header">
+        <div class="row">
+          <div id="card-img">
+            <img src="fruits.jpg" alt="" />
+          </div>
+          <div class="card">
+            <div id="label-row">
+              <span class="category active">Fruit</span>
+              <span class="category active">#E24A2</span>
+            </div>
+	    <div class="card-detail">
+            <h6 class="subtitle">Product #3</h6>
+            <p>Lorem Ipsum, Lorem ipsume</p>
+	    	
+	    </div>
+              <div class="cpt-box">
+                <span>-</span>
+                <span>3</span>
+                <span>+</span>
+              </div>
+              <button class="bg-primary">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+      <section class="recommendation">
+        <div class="row">
+          <div id="card-rmd">
+            <img src="fruits.jpg" alt="" />
+	    <a class="btn btn-primary" href="./product_detail.html">Voir Product</a>
+          </div>
+          <div id="card-rmd">
+            <img src="fruits.jpg" alt="" />
+	    <a class="btn btn-primary" href="Voir Product">Voir Product</a>
+          </div>
+          <div id="card-rmd">
+            <img src="fruits.jpg" alt="" />
+	    <a class="btn btn-primary" href="Voir Product">Voir Product</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="row-footer">
+        <div class="col-footer">
+          <div class="card-img">
+            <img src="westerneat.png" alt="" />
+          </div>
+          <p></p>
+          <div class="social-group"></div>
+        </div>
+        <div class="col-footer">
+          <h4>Nos Liens</h4>
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">Vendors</a>
+        </div>
+        <div class="col-footer">
+          <h4>Contacts</h4>
+          <span>France: +33 7 49 02 93 33</span>
+          <span>Gabon : +241 77 33 05 53</span>
+          <span>E-mail : westerneat@gmail.com</span>
+        </div>
+      </div>
+      <hr />
+      <div id="row-footer">
+        <span>@2024, Westerneat. Tous droits réservés.</span>
+        <div id="closes">
+          <a href="#">Termes</a>
+          <a href="#">Confidentialité</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

@@ -1,0 +1,143 @@
+section {
+  padding: 2em;
+}
+
+.row {
+  padding: 1em 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.category {
+  border: 1px solid black;
+  padding: 0.5em;
+  background-color: white;
+  border-radius: 0.2em;
+  width: 10%;
+  text-align: center;
+  transition: 2s all ease;
+}
+
+.category:hover,
+.active {
+  background-color: var(--primary-accent);
+  letter-spacing: 0.2em;
+}
+
+#card-img,
+#card-rmd {
+  width: 50%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+#card-rmd {
+  width: 30%;
+  height: 50%;
+
+  .btn {
+    border-radius: 0 0 var(--btn-radius) var(--btn-radius);
+  }
+}
+
+.card {
+  width: 42%;
+  height: 24em;
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+  border-radius: var(--btn-radius);
+  border: 2px solid var(--primary-accent);
+  text-align: start;
+  span {
+    font-size: 1.2em;
+  }
+
+  #label-row {
+    display: flex;
+    gap: 0.5em;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+
+    .category {
+      width: 16%;
+      text-align: center;
+    }
+  }
+  .card-detail {
+    height: 100%;
+    padding: 0.2em 0 0;
+    h6 {
+      font-family: "Qilka Bold";
+    }
+    p {
+      font-size: var(--normal-text);
+    }
+  }
+
+  .subtitle {
+    margin: 0.5em 0;
+    font-size: var(--subtitle-text);
+  }
+
+  .cpt-box {
+    display: flex;
+    width: 100%;
+    border-radius: var(--btn-radius);
+    border: 2px solid var(--primary-accent);
+    span {
+      width: 33%;
+      text-align: center;
+      padding: 0.5em;
+    }
+  }
+  button {
+    width: 101%;
+    padding: 1em;
+  }
+}
+
+@media screen and (380px <= width <= 700px) {
+  .card,
+  #card-img,
+  #card-rmd {
+    width: 94%;
+  }
+
+  .row {
+    gap: 0;
+  }
+  .header,
+  .recommendation {
+    padding: 2em 0;
+  }
+
+  #card-rmd {
+    margin: 0.2em 0;
+  }
+
+  #card-img {
+    margin-left: -1.1em;
+    width: 104%;
+  }
+
+  .card {
+    padding: 1em 0.5em;
+    #label-row {
+      .category {
+        width: 35%;
+      }
+    }
+  }
+}

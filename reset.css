@@ -1,0 +1,286 @@
+:root {
+  --header-text: 2.7em;
+  --subtitle-text: 1.5em;
+  --normal-text: 2.2em;
+  --primary-accent: #f2afbc;
+  --secondary-accent: ffc592;
+  --btn-radius: 0.2em;
+}
+
+@font-face {
+  font-family: "Qilka Bold";
+  src: url("Qilkabold.otf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("Montserrat.ttf");
+}
+
+@font-face {
+  font-family: "The Bouns";
+  src: url("TheBounsRegular.ttf");
+}
+
+@font-face {
+  font-family: "Launching Product";
+  src: url("LaunchingProduct.otf");
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+hr {
+  width: 95%;
+  height: 0.2em;
+  border-radius: var(--btn-radius);
+  border: none;
+}
+
+.text-end {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: end;
+}
+
+input,
+textarea,
+select,
+button {
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: letter-spacing 1.5s;
+}
+
+a:hover {
+  letter-spacing: 0.2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Qilka Bold";
+}
+
+span,
+a,
+p {
+  font-family: "Montserrat";
+}
+
+p {
+  font-size: 0.5em;
+}
+
+.w-x {
+  width: 40%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.btn,
+button {
+  border-radius: var(--btn-radius);
+  border: 2px solid black;
+  padding: 0.5em;
+  display: block;
+  text-align: center;
+  font-family: "Qilka Bold";
+}
+
+.bg-primary {
+  background-color: var(--primary-accent);
+}
+
+.text-primary {
+  background-color: var(--primary-accent);
+}
+
+.card-img {
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--btn-radius);
+  }
+}
+
+footer {
+  padding: 1.2em 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+  color: white;
+
+  hr {
+    background-color: white;
+  }
+
+  a {
+    color: white;
+  }
+
+  .card-img {
+    img {
+      width: 50%;
+    }
+  }
+}
+
+nav,
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1em;
+  > * {
+    font-family: "Qilka Bold";
+  }
+  a {
+    font-family: "Qilka Bold";
+  }
+}
+
+nav {
+  padding: 0.2em 1em;
+}
+
+ul {
+  padding: 0.2em;
+  gap: 1.8em;
+  img {
+    width: 2em;
+  }
+}
+
+li > .card {
+  position: absolute;
+  width:74vw;
+  margin-top:0.5em;
+  margin-left:-20.5em;
+  z-index: -1;
+  padding: 2em 3em;
+  opacity:0;
+  border-radius: var(--btn-radius);
+  background-color: white;
+  border: 1px solid black;
+  transition: 0.8s all linear;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+#show:focus-within .card {
+  -webkit-opacity: 1;
+  margin-top:1.4em;
+  opacity:1;
+  display:block;
+  z-index: 3;
+}
+
+#hamburger {
+  display: none;
+}
+
+#row-footer {
+  padding: 0 1.5em;
+  display: inherit;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0;
+
+  .col-footer {
+    width: 26%;
+    display: inherit;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 0.8em;
+
+    h4 {
+      margin: 0;
+    }
+  }
+}
+
+#closes {
+  display: flex;
+  gap: 1em;
+}
+
+.row {
+  width: 100%;
+  padding: 3em 0 2em;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (380px <= width <= 700px) {
+  --header-text: 1em;
+  --subtitle-text: 0.5em;
+  --normal-text: 0.4em;
+
+  section {
+    width: 100%;
+    position: relative;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+  nav ul {
+    display: none;
+  }
+
+  #hamburger {
+  display: flex;
+  }
+
+  .card ul {
+    display: block;
+  }
+
+  #row-footer {
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+    align-items: center;
+
+    .col-footer {
+      padding: 0.5em 0;
+      height: 50%;
+      align-items: center;
+      width: 100%;
+      gap: 1em;
+    }
+  }
+}

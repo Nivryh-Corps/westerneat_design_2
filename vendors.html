@@ -1,0 +1,150 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Westerneat | Home</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./vendors.css" />
+    <link rel="stylesheet" href="./aos.css" />
+  </head>
+  <body>
+    <nav>
+      <a id="head-link" href="#">Westerneat</a>
+
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./vendors.html">Vendors</a></li>
+        <li><a href="./cart.html">Cart</a></li>
+      </ul>
+
+      <ul class="w-20">
+        <li><a href="./login.html">Login</a></li>
+        <li class="w-100">
+          <a href="./register.html" class="btn bg-primary">Register</a>
+        </li>
+      </ul>
+      <ul id="hamburger">
+        <li id="show">
+          <a href="#" tabindex="0"><img id="menu" src="./menu.svg" alt="" /></a>
+          <div class="card">
+            <ul>
+              <li class="li">
+                <a href="./index.html">Accueil</a>
+              </li>
+              <li class="li">
+                <a href="./products.html">Produits</a>
+              </li>
+              <li class="li">
+                <a href="./vendors.html">Vendeurs</a>
+              </li>
+              <li class="li">
+                <a href="./cart.html">Panier</a>
+              </li>
+              <li><a href="./login.html">Login</a></li>
+              <li>
+                <a href="./register.html" class="btn bg-primary">Register</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="header">
+	    <form>
+		    <select name="region" id="c">
+		    	<option>Estuaire</option>
+		    </select>
+		    <select name="city" id="c">
+		    	<option>Libreville</option>
+		    </select>
+	    </form>
+        <div class="row"
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+		>
+          <div
+            class="card-vendor"
+          >
+            <div class="card-img">
+              <img src="fruits.jpg" alt="" />
+            </div>
+            <div class="card-detail">
+		    <h6>Vendor# 1</h6>
+              <a class="btn btn-primary" href="./vendor_detail.html">Voir Vendeur</a>
+            </div>
+          </div>
+          <div
+            class="card-vendor"
+          >
+            <div class="card-img">
+              <img src="fruits.jpg" alt="" />
+            </div>
+            <div class="card-detail">
+		    <h6>Vendor# 1</h6>
+              <a class="btn btn-primary" href="#">Voir Vendeur</a>
+            </div>
+          </div>
+          <div
+            class="card-vendor"
+          >
+            <div class="card-img">
+              <img src="fruits.jpg" alt="" />
+            </div>
+            <div class="card-detail">
+		    <h6>Vendor# 1</h6>
+              <a class="btn btn-primary" href="#">Voir Vendeur</a>
+            </div>
+          </div>
+          <div
+            class="card-vendor"
+          >
+            <div class="card-img">
+              <img src="fruits.jpg" alt="" />
+            </div>
+            <div class="card-detail">
+		    <h6>Vendor# 1</h6>
+              <a class="btn btn-primary" href="#">Voir Vendeur</a>
+            </div>
+          </div>
+      </section>
+    </main>
+    <footer>
+      <div id="row-footer">
+        <div class="col-footer">
+          <div class="card-img">
+            <img src="westerneat.png" alt="" />
+          </div>
+          <p></p>
+          <div class="social-group"></div>
+        </div>
+        <div class="col-footer">
+          <h4>Nos Liens</h4>
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">Vendors</a>
+        </div>
+        <div class="col-footer">
+          <h4>Contacts</h4>
+          <span>France: +33 7 49 02 93 33</span>
+          <span>Gabon : +241 77 33 05 53</span>
+          <span>E-mail : westerneat@gmail.com</span>
+        </div>
+      </div>
+      <hr />
+      <div id="row-footer">
+        <span>@2024, Westerneat. Tous droits réservés.</span>
+        <div id="closes">
+          <a href="#">Termes</a>
+          <a href="#">Confidentialité</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
