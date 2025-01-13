@@ -38,6 +38,11 @@ form {
     border: 1px solid black;
     border-radius: var(--btn-radius);
   }
+  a {
+    width: 99.5%;
+    padding: 1em 0 !important;
+    text-align:center;
+  }
 
   button {
     height: 4em;
@@ -50,11 +55,11 @@ form:hover {
 }
 
 @media screen and (380px <= width <= 700px) {
-	form{
-		width:85%;
-		a{
-			width:99%;
-			padding:1em 0 !important;
-		}
-	}
+  form {
+    width: 85%;
+    a {
+      width: 99%;
+      padding: 1em 0 !important;
+    }
+  }
 }
